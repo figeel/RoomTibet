@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <title>РУМТИБЕТ</title> 
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <img src="./img/header/header-logo.png" alt="logo" />
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-list-item"><a href="#">О нас</a></li>
+              <li class="header-list-item"><a href="#">Программа тура</a></li>
+              <li class="header-list-item"><a href="#">Стоимость</a></li>
+              <li class="header-list-item"><a href="#">Блог</a></li>
+              <li class="header-list-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-section">
+        <div class="container">
+          <div class="header-content">
+            <h1 class="header-slogan">
+              Насладись прогулкой в горах<br/>с командой единомышленников
+            </h1>
+            <div class="search-block">
+              <div class="search-row">
+                <div class="search-option">
+                    <div class="custom-dropdown">
+                        <div class="selected">
+                            <p>Локация для тура</p>
+                            <img src="./img/header/down-icon.svg" alt="">
+                        </div>
+                        <div class="options">
+                          <div class="option">Озеро возле гор</div>
+                          <div class="option">Ночь в горах</div>
+                          <div class="option">Йога в горах</div>
+                        </div>
+                      </div>
+                  <p class="option-description">выберите из списка</p>
+                </div>
+
+                <div class="search-option">
+                    <div class="option-item">
+                            <input type="text" id="datepicker" placeholder="Дата похода">
+                            <img src="./img/header/date_icon.svg" alt="выбрать дату" class="datepicker-icon">
+                    </div>
+                    <p class="option-description">укажите диапазон</p>
+                </div>
+
+                <div class="search-option">
+                  <input
+                    type="text"
+                    class="option-item"
+                    placeholder="Участники"
+                  />
+                  <p class="option-description">минимум 4 человека</p>
+                </div>
+
+                <div class="search-option">
+                  <a href="#!" class="button search">Найти программу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-hike">
+        <div class="container">
+            <div class="about-hike-media">
+                <img src="./img/video/mountain_1.png" alt="гора">
+                <div class="video-wrapper">
+                    <video class="about-hike-video" muted>
+                        <source src="./img/video/hike.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
+                </div>
+            </div>
+            <div class="about-hike-text">
+              <h3 class="about-hike-title title">о нашем походе</h3>
+              <p class="about-hike-slogan slogan">Исследуйте все горные массивы мира вместе с нами</p>
+              <p class="about-hike-p p">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+              <a href="#!" class="button tour">Программа тура</a>
+            </div>
+        </div>
+      </section>
+
+      <section class="our-deal">
+        <div class="container">
+          <div class="our-deal-content">
+            <div class="our-deal-text">
+              <div class="t-s">
+                <h3 class="our-deal-title title">наше предложение</h3>
+                <p class="our-deal-slogan slogan">Лучшие программы для тебя</p>
+              </div>
+              <p class="our-deal-p p">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+                <div class="our-deal-option">
+                  <img src="./img/our-deal/guide.svg" alt="guide">
+                  <div class="our-deal-option-text">
+                    <h4 class="our-deal-option-title">Опытный гид</h4>
+                    <p class="our-deal-option-p">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+
+                <div class="our-deal-option">
+                  <img src="./img/our-deal/safety.svg" alt="safety">
+                  <div class="our-deal-option-text">
+                    <h4 class="our-deal-option-title">Безопасный поход</h4>
+                    <p class="our-deal-option-p">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+
+                <div class="our-deal-option">
+                  <img src="./img/our-deal/prices.svg" alt="prices">
+                  <div class="our-deal-option-text">
+                    <h4 class="our-deal-option-title">Лояльные цены</h4>
+                    <p class="our-deal-option-p">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+                <a href="#!" class="our-deal-price button">Стоимость программ</a>
+            </div>
+            <div class="our-deal-media">
+              <img src="./img/our-deal/our-deal-img.png" alt="collage">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-ways">
+        <div class="container">
+          <div class="popular-ways-content">
+            <div class="popular-ways-text">
+              <h3 class="popular-ways-title title">по версии отдыхающих</h3>
+              <p class="popular-ways-slogan slogan">Популярные направления</p>
+            </div>
+            <div class="popular-ways-cards"></div>
+            <a href="#!" class="button ways-raiting-button">Рейтинг направлений</a>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog-content">
+            <div class="blog-content-text">
+              <h3 class="blog-title title">делимся впечатлениями</h3>
+              <p class="blog-slogan slogan">Блог о путешествиях</p>
+            </div>
+            <div class="block-posts"></div>
+            <a href="#!" class="button blog-button">Другие материалы</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-photos">
+        <div class="container">
+          <div class="our-photos-content">
+            <div class="our-photos-text">
+              <h3 class="our-photos-title title">фото-отчет</h3>
+              <p class="out-photos-slogan slogan">Делимся впечатлениями</p>
+            </div>
+            <div class="gallery-container">
+              <button class="nav-button" onclick="prevImage()">❮</button>
+              
+              <div class="gallery">
+                  <img src="./img/gallery/gallery01.jpeg" alt="Фото 1" class="gallery-image active">
+                  <img src="./img/gallery/gallery02.jpeg" alt="Фото 2" class="gallery-image">
+                  <img src="./img/gallery/gallery03.jpeg" alt="Фото 3" class="gallery-image">
+                  <img src="./img/gallery/gallery04.jpeg" alt="Фото 4" class="gallery-image">
+                  <img src="./img/gallery/gallery05.jpeg" alt="Фото 5" class="gallery-image">
+                  <img src="./img/gallery/gallery06.jpeg" alt="Фото 6" class="gallery-image">
+              </div>
+              
+              <button class="nav-button" onclick="nextImage()">❯</button>
+          </div>
+          <a href="#!" class="button pinterest-button">Наш pinterest</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="about-company">
+            <h2 class="company-name">Компания «РумТибет»</h2>
+            <p class="about-company-text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+          </div>
+          <div class="socials">
+            <div class="app-icons">
+              <a href="http://"><img src="./img/socials/telegram.svg" alt="telegram"></a>
+              <a href="http://"><img src="./img/socials/vk.svg" alt="vk"></a>
+              <a href="http://"><img src="./img/socials/pinterest.svg" alt="pinterest"></a>
+              <a href="http://"><img src="./img/socials/skype.svg" alt="skype"></a>
+            </div>
+            <div class="contacts">
+              <a href="mailto:info@domain.com">info@domain.com</a>
+              <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/posts.js"></script>
+    <script src="./js/cards.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

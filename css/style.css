@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: 
+        local('NEXT ART Bold'), 
+        local('NEXTART-Bold'),
+        url('../fonts/NEXTART-Bold.woff2') format('woff2'),
+        url('../fonts/NEXTART-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
+.button {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.2%;
+    background-color: rgba(26, 62, 62, 1);
+    border: 1px solid rgba(26, 62, 62, 1);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+}
+
+.button:hover, .button:focus {
+    background-color: white;
+    color: rgba(26, 62, 62, 1);
+    border: 1px solid rgba(26, 62, 62, 1);
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    left: 0;
+    padding-top: 16px;
+    padding-bottom: 6px;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    transition: .2s ease-in-out;
+}
+
+.header-blur {
+    background-color: rgba(26, 62, 62, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-list {
+    display: flex;
+    gap: 24px;
+}
+
+.header-list-item {
+    font-size: 18px;
+}
+
+.header-list-item a {
+    color: white;
+}
+
+.main-section {
+    background-image: url("http://127.0.0.1:5500/lab2%20IP/img/header/header-background.png");  
+    background-size: cover; /* Добавьте это, чтобы изображение заполнило блок */
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.header-content {
+    padding-top: 551px;
+    padding-bottom: 82px;
+    justify-content: center;
+}
+.header-slogan {
+    font-family: 'NEXT ART', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.search-block {
+    margin-top: 41px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+}
+
+.search-row {
+    padding: 40px 43px;
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-option {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 250px; /* Минимальная базовая ширина 250px */
+    max-width: 270px;
+}
+
+.option-item {
+    padding: 14px 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-item::placeholder { color: white; }
+#datepicker::placeholder {color: white;}
+
+.datepicker-icon {
+    cursor: pointer;
+}
+
+.custom-dropdown {
+    position: relative;
+    
+  }
+  
+  .selected {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    width: 100%;    
+    border-radius: 8px;
+  }
+  
+  .option {
+    padding: 10px;
+    background-color:rgba(26, 62, 62, 1);
+    cursor: pointer;
+    border:1px solid white
+  }
+  
+  .option:hover {
+    background: rgb(13, 58, 58);
+    backdrop-filter: blur(50px);
+  }
+
+  .custom-dropdown .option:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .custom-dropdown .option:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .custom-dropdown:hover .options {
+    display: block;
+  }
+
+.option-description {
+font-size: 14px;
+}
+
+.search{
+padding: 16px 36px; 
+}
+
+/* about hike section */
+
+.about-hike {
+padding: 100px 0;
+}
+
+.about-hike .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-hike-media{
+position: relative;
+max-height: 526px;
+height: 45vw;
+width: 40.68vw;
+max-width: 480px;
+}
+
+.video-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.about-hike-video {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 24px;
+}
+
+.video-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 15;
+    width: 50px;
+    height: 50px;
+    background: url("../img/video/play-button.svg") no-repeat;
+    transition: .1s linear;
+    opacity: 1;
+}
+
+.video-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/video/mountain_2.jpg) no-repeat;
+    block-size: cover;
+    background-position: center center;
+    transition: .1s linear;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    border-radius: 24px;
+    z-index: 10;
+    
+}
+
+.about-hike__video[poster]{
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.video-wrapper.active::after,
+.video-wrapper.active::before{
+    opacity: 0;
+}
+
+/* about hike text */
+
+.about-hike-text {
+    max-width: 580px;
+}
+
+.about-hike-title {
+    padding-bottom: 8px;
+}
+
+.title {
+    line-height: 20px;
+    font-size: 24px;
+    color: rgba(242, 190, 34, 1);
+}
+
+.about-hike-slogan {
+    padding-bottom: 40px;
+}
+
+.slogan {
+    font-weight: 800;
+    line-height: 120%;
+    color: rgba(24, 18, 30, 1);
+    font-size: 32px;
+}
+
+.about-hike-p {
+    padding-bottom: 40px;
+}
+
+.p {
+    color: rgba(24, 18, 30, 1);
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.button.tour {
+    padding: 16px 36px;
+}
+
+/* our deal */
+
+.our-deal {
+    background-color: rgba(243, 245, 244, 1);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.our-deal-content {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+.our-deal-text {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our-deal-title {
+ padding-bottom: 8px;
+}
+
+.our-deal-option {
+    display: flex;
+    gap: 7px;
+}
+
+.our-deal-option-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.our-deal-option-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1.2%;
+
+}
+
+.our-deal-option-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+
+.our-deal-price {
+    padding: 16px 36px;
+    max-width: 236px;
+}
+
+/* popular ways */
+
+.popular-ways {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.popular-ways-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular-ways-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular-ways-title {
+    padding-bottom: 8px;
+}
+
+.popular-ways-cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.popular-ways-card {
+    max-height: 500px;
+    max-width: 380px;
+    min-height: 460px;
+    min-width: 350px;
+    flex-grow: 1;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 32px;
+    flex-grow: 1;
+}
+
+.card-content-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex: none;
+    height: fit-content;
+}
+
+.popular-ways-card-text {
+    
+}
+.card-title {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.card-description {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%; 
+}
+.card-price {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.card-price-text {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.card-full-description {
+
+    display: none;
+}
+
+.card-full-description-text {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}  
+
+.card-button {
+    display: none;
+    padding: 12px 24px;
+    max-width: 176px;
+}
+
+.popular-ways-card:hover .card-full-description,
+.popular-ways-card:hover .card-button {
+    display: block;
+}
+
+.popular-ways-card:hover .card-content {
+    height: 100%;
+    border-radius: 32px;
+    justify-content: space-between;
+
+}
+
+.ways-raiting-button {
+    margin-top: 50px;
+    display: block;
+    padding: 16px 36px;
+    max-width: 244px;
+}
+
+/* blog */
+.blog {
+    background-color: rgba(243, 245, 244, 1);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-title {
+    padding-bottom: 8px;
+}
+
+.block-posts {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.block-post {
+    width: 560px;
+    height: 312px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #fff;
+
+    display: flex;
+    gap: 24px;
+}
+
+.block-post-media {
+    flex: 0 0 230px;
+}
+
+.block-post-media-img {
+    width: 230px;
+    height: 280px;
+    border-radius: 6px; 
+    object-fit: cover;   
+}
+
+.block-post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a.block-post-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: rgba(24, 18, 30, 1);
+}
+
+.block-post:focus a.block-post-title {
+    text-decoration: underline;
+    color: rgba(26, 62, 62, 1);
+}
+
+.block-post:hover a.block-post-title {
+    text-decoration: underline;
+    color: rgba(26, 62, 62, 1);
+}
+
+.block-post-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.block-post-text-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-post-text-footer-data {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color:rgba(242, 190, 34, 1);
+}
+
+.block-post-text-footer-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color:rgba(26, 62, 62, 1);
+}
+
+.blog-button {
+    padding: 16px 36px;
+    width: 220px;
+    margin-top: 50px;
+}
+
+
+/* gallery */
+
+.our-photos {
+    padding-top: 80px;
+    padding-bottom: 100px;  
+}
+
+.our-photos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.our-photos-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: none;
+    object-fit: contain;
+    border-radius: 32px;
+}
+
+.gallery-image.active {
+    display: inline-block;
+}
+
+.nav-button {
+    width: 50px;
+    height: 80px;
+    background-color: rgba(200, 200, 200, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: rgba(200, 200,200, 0.8);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        width: 40px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+.pinterest-button {
+    padding: 16px 36px;
+}
+
+
+/* footer */
+.footer {
+    background-color: rgba(26, 62, 62, 1);
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about-company {
+    max-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    
+}
+
+.about-company-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.socials {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+   gap: 32px;
+   align-items: flex-end;
+}
+
+.app-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-grow: 1;
+    gap: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+}
+
+.contacts a {
+    color: white;
+}
