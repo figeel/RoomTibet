@@ -158,6 +158,10 @@
         display: none;
     }
 
+    .blog-content {
+        gap: 40px;
+    }
+
     .blog-posts-container {
         overflow-x: hidden;
         width: 100%;
