@@ -165,6 +165,7 @@
       }
 
       .block-posts {
+        padding-top: 0;
         justify-content: flex-start;
         display: flex;
         flex-direction: row;
@@ -213,6 +214,10 @@
         font-size: 14px;
         line-height: 20px;
 
+    }
+
+    .blog-button {
+        margin-top: 0;
     }
 
     .footer-content {
