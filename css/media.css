@@ -56,8 +56,35 @@
         display: none;
     }
 
+    .header {
+        background-color: rgba(26, 62, 62, 0.2);
+        backdrop-filter: blur(6px);
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .header-menu > img {
+        width: 23vw;
+    }
+
     .menu-button {
         display: block;
+        z-index: 9;
+    }
+
+    .header-nav.open .menu-button {
+        display: block;
+        z-index: 9;
+        position: fixed;
+        right: 25px;
+        top: 31px;
+        scale: 1.2;
     }
 
     .header-nav.open .header-list{
@@ -76,5 +103,110 @@
 
         font-size: 34px;
         font-weight: 600;
+    }
+
+    .header-slogan {
+        font-size: 21px;
+    }
+
+    .about-hike-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-hike-title {
+        align-self: center;
+    }
+
+    .about-hike-slogan {
+        align-self: center;
+        text-align: center;
+    }
+
+    .about-hike .container {
+        flex-direction: column-reverse;
+        gap: 15vw;
+    }
+
+    .about-hike-media {
+        width: 85vw;
+        justify-content: center;
+        height: 400px;
+    }
+    .about-hike-video {
+        height: 450px;
+    }
+
+    .our-deal-slogan {
+        text-align: center;
+    }
+
+    .popular-ways-slogan {
+        font-size: 31px;
+    }
+
+    .popular-ways-cards {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .popular-ways-card {
+        scroll-snap-align: start;
+    }
+    .popular-ways-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blog-posts-container {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+      }
+
+      .block-posts {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease;
+        touch-action: pan-y; /* Блокируем вертикальный скролл */
+      }
+
+    .block-post {
+        min-width: 66vw;
+        height: 112vw;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        scroll-snap-align: start;
+    }
+
+    .block-post-media {
+        width: 100%;
+    }
+
+    .block-post-media-img {
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .block-post-text {
+        padding: 16px;
+        padding-bottom: 16px;
+        height: 100%;
+    }
+
+    a.block-post-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .block-post-description {
+        font-size: 14px;
+        line-height: 20px;
+
     }
 }

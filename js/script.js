@@ -10,6 +10,17 @@
     });
  }
 
+ function replaceBrWithSpace() {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('br').forEach(br => {
+        br.replaceWith(' '); // Заменяем <br> на пробел
+      });
+    }
+  }
+  
+  replaceBrWithSpace();
+  window.addEventListener('resize', replaceBrWithSpace);
+
 document.querySelectorAll('.option').forEach(option => {
     option.addEventListener('click', function() {
       document.querySelector('.selected').textContent = this.textContent;

@@ -97,7 +97,6 @@ body {
     justify-content: center;
 }
 .header-slogan {
-    display: none;
     font-family: 'NEXT ART', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -397,8 +396,6 @@ max-width: 480px;
     margin-top: 50px;
     display: flex;
     gap: 20px;
-    
-    display: none;
 }
 .popular-ways-card {
     max-height: 500px;
@@ -534,8 +531,6 @@ max-width: 480px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
-    display: none;
 }
 
 .block-post {
