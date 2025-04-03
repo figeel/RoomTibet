@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     
@@ -22,7 +23,7 @@
       <div class="container">
         <div class="header-menu">
           <img src="./img/header/header-logo.png" alt="logo" />
-          <nav class="header-nav">
+          <nav id="header-nav" class="header-nav">
             <ul class="header-list">
               <li class="header-list-item"><a href="#">О нас</a></li>
               <li class="header-list-item"><a href="#">Программа тура</a></li>
@@ -30,6 +31,9 @@
               <li class="header-list-item"><a href="#">Блог</a></li>
               <li class="header-list-item"><a href="#">Контакты</a></li>
             </ul>
+            <button id="menu-button" class="menu-button">
+              <img id="menu-button-img" src="./img/nav-closed.svg" alt="Nav button">
+            </button>
           </nav>
         </div>
       </div>
@@ -88,7 +92,7 @@
       <section class="about-hike">
         <div class="container">
             <div class="about-hike-media">
-                <img src="./img/video/mountain_1.png" alt="гора">
+                <img src="./img/video/mountain_1.png" class="mountain-photo" alt="гора">
                 <div class="video-wrapper">
                     <video class="about-hike-video" muted>
                         <source src="./img/video/hike.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>

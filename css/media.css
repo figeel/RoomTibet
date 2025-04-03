@@ -1,0 +1,80 @@
+@media screen and (max-width:1184px) {
+
+    .about-hike .container {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+    }
+    .mountain-photo {
+        display: none;
+    }
+
+    .about-hike-media {
+        display: flex;
+        align-items: center;
+    }
+
+    .video-wrapper {
+        right: auto;
+        bottom: auto;
+    }
+
+    .our-deal-content {
+        justify-content: center;
+    }
+
+    .our-deal-media {
+        display: none;
+    }
+
+    .our-deal-text {
+        align-items: center;
+    }
+
+    .t-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-posts {
+        justify-content: center;
+    }
+
+    .block-post {
+        width: 70vw;
+        height: 26vw;
+    }
+}
+
+@media screen and (max-width:431px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-nav.open .header-list{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(26, 62, 62, 1);
+
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        font-size: 34px;
+        font-weight: 600;
+    }
+}
