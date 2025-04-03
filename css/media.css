@@ -174,9 +174,13 @@
         -webkit-overflow-scrolling: touch;
       }
 
+      .block-posts::-webkit-scrollbar {
+        display: none;
+    }
+
     .block-post {
         min-width: 66vw;
-        height: 113vw;
+        height: 120vw;
         flex-direction: column;
         padding: 0;
         gap: 0;
