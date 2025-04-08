@@ -22,14 +22,13 @@
     <header class="header">
       <div class="container">
         <div class="header-menu">
-          <img src="./img/header/header-logo.png" alt="logo" />
+          <a href="#!"><img src="./img/header/header-logo.png" alt="logo" /></a>
           <nav id="header-nav" class="header-nav">
             <ul class="header-list">
-              <li class="header-list-item"><a href="#">О нас</a></li>
-              <li class="header-list-item"><a href="#">Программа тура</a></li>
-              <li class="header-list-item"><a href="#">Стоимость</a></li>
-              <li class="header-list-item"><a href="#">Блог</a></li>
-              <li class="header-list-item"><a href="#">Контакты</a></li>
+              <li class="header-list-item"><a href="./about-us.html">О нас</a></li>
+              <li class="header-list-item"><a href="./programs.html">Программа тура</a></li>
+              <li class="header-list-item"><a href="#blog">Блог</a></li>
+              <li class="header-list-item"><a href="#contacts">Контакты</a></li>
             </ul>
             <button id="menu-button" class="menu-button">
               <img id="menu-button-img" src="./img/nav-closed.svg" alt="Nav button">
@@ -163,7 +162,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog" id="blog">
         <div class="container">
           <div class="blog-content">
             <div class="blog-content-text">
@@ -204,7 +203,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer-content">
           <div class="about-company">
@@ -213,10 +212,10 @@
           </div>
           <div class="socials">
             <div class="app-icons">
-              <a href="http://"><img src="./img/socials/telegram.svg" alt="telegram"></a>
-              <a href="http://"><img src="./img/socials/vk.svg" alt="vk"></a>
-              <a href="http://"><img src="./img/socials/pinterest.svg" alt="pinterest"></a>
-              <a href="http://"><img src="./img/socials/skype.svg" alt="skype"></a>
+              <a href="https://desktop.telegram.org"><img src="./img/socials/telegram.svg" alt="telegram"></a>
+                    <a href="http://vk.com"><img src="./img/socials/vk.svg" alt="vk"></a>
+                    <a href="http://pinterest.com"><img src="./img/socials/pinterest.svg" alt="pinterest"></a>
+                    <a href="http://skype.com"><img src="./img/socials/skype.svg" alt="skype"></a>
             </div>
             <div class="contacts">
               <a href="mailto:info@domain.com">info@domain.com</a>
@@ -226,6 +225,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/posts.js"></script>
     <script src="./js/cards.js"></script>

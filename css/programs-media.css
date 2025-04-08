@@ -1,0 +1,19 @@
+@media screen and (max-width:431px) {
+    .all-ways-cards {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .popular-ways-card {
+        scroll-snap-align: start;
+    }
+
+    .all-ways-cards::-webkit-scrollbar {
+        display: none;
+    }
+}
